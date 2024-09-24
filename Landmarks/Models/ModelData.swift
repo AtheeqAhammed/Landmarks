@@ -13,6 +13,8 @@ import Foundation
     
     var landmarks: [Landmark] = load("landmarkData.json")
     
+    var profile = Profile.default
+    
     var features: [Landmark] {
         landmarks.filter { $0.isFeatured }
     }
